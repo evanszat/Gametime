@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>basic html</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<div class="header">
+ <h1>National Football League</h1>
+</div>
+
+<body>
+
+<div>
+
+<ul class="A">
+ <li><h1></h1></li>
+</ul>
+</div>
+
+<div class="navigation">
+  <ul>
+  <% organization = @clubs%>
+  <% organization.each do |team| %>
+
+
+  <li>
+    <a href="player_names/<%=team %>">
+      <%= team %>
+    </a>
+  </li>
+
+  <% end %>
+
+</ul>
+</div>
+
+</body>
+
+</html>
+

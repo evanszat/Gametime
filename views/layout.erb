@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>National Football League</title>
+  </head>
+  <body>
+  <div class="container">
+
+    <div class="navigation-bar">
+      <ul>
+        <li id="fcombo"><strong>F</strong></li>
+        <li><strong>National Football League</strong></li>
+        <li> | </li>
+        <li><a href="/" id = '/'>Scores</a></li>
+        <li> | </li>
+        <li><a href="#">Teams</a></li>
+        <li> | </li>
+        <li><a href="/morenews">Leaderboard/a></li>
+      </ul>
+    </div>
+
+   <%= yield %>
+
+    <div class="search">
+      <li>Search:</li>
+      <form>
+        <input id="search-box" type="text" placeholder=" " required>
+      </form>
+    </div>
+  </div>
+</body>
+
+
+</html>
